@@ -13,5 +13,5 @@ Then (/^Handle the alert$/, async function () {
         await browser.acceptAlert() //to click on OK button on alert
         await browser.pause(5000)
     }
-    await browser.pause(5000)
+    await browser.pause(6000)
 })
