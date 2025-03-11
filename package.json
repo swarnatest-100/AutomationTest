@@ -1,11 +1,21 @@
 {
   "name": "WdioLatest",
   "type": "module",
+  "scripts": {
+    "regressionDebug": "set DEBUG=Y && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@Debug'",
+    "regression": "set DEBUG=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@Regression'",
+    "smoke": "set DEBUG=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@Smoke'"
+  },
   "devDependencies": {
+    "@types/supertest": "^6.0.2",
     "@wdio/allure-reporter": "^9.2.2",
     "@wdio/cli": "^9.2.11",
     "@wdio/cucumber-framework": "^9.2.8",
     "@wdio/local-runner": "^9.2.8",
-    "@wdio/spec-reporter": "^9.2.8"
+    "@wdio/spec-reporter": "^9.2.8",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }

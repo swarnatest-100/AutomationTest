@@ -1,4 +1,4 @@
-Feature: Validate Google Page
+Feature: Validate Multiple functionality Page
 
 #   Scenario: Search value in Google Page
 #     # Given Google page is open
@@ -15,11 +15,12 @@ Feature: Validate Google Page
 #     # When Mouse hover to Women Ethnic
 #     # Then Click on Women Saree
 
-#   Scenario: Double click Feature
-#     #Given testautomation site is open
-#     #When  double clicked on copy text button
-#     #Then Click on the Female radio button
-#     #Then Drag and drop the box
+  @Regression
+  Scenario: Double click Feature
+    Given testautomation site is open
+    When  double clicked on copy text button
+    Then Click on the Female radio button
+    Then Drag and drop the box
 
 #   Scenario: Drag and drop exercise
 #     #Given guru99 site is open
@@ -55,9 +56,10 @@ Feature: Validate Google Page
 #   # Then click on Alert box
 #   # Then Handle the alert
 
-# Scenario: Validate the text and button
-# Given testautomation site is open
-# Then Validate Start button is displayed
+@Smoke
+Scenario: Validate the text and button
+Given testautomation site is open
+Then Validate Start button is displayed
 
 
 # Scenario: Validate the Logo

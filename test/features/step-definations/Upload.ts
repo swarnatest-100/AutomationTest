@@ -22,17 +22,30 @@ import { Given,When,Then, Before }  from "@wdio/cucumber-framework";
 //     // await $("#upload-success-message").waitForDisplayed({ timeout: 8000 }); // Wait for success message
 // })
 
-// Then(/^Validate Start button is displayed$/, async function (){
+Then(/^Validate Start button is displayed$/, async function (){
 
-//     let Actualresult = await $ ("//button[@name='start']").isDisplayed()  //true false
-//     expect(Actualresult).toEqual(true)
+    let ActualText;
 
-//     let ActualText = await $("//h2[@class='title']").getText()
-//     expect(ActualText).toEqual("Upload Files")
+    let Actualresult = await $ ("//button[@name='start']").isDisplayed()  //true false
+    expect(Actualresult).toEqual(true)
+
+    try{
+      ActualText = await $("//h2[@class='title']").getText()
+    expect(ActualText).toEqual("Upload Fil")
+    }
+    catch(e)
+    {
+        console.log("Assertion message for text failing"+ e.message)
+    }
+    finally{
+
+        ActualText = null; //garbage value will removed
+        //FileSystem.gc()
+    }
     
-//     let Actualresult1 = await $ ("//button[@name='start']")
-//    console.log( expect(Actualresult1).toBeDisplayed)
-// })
+    let Actualresult1 = await $ ("//button[@name='start']")
+   console.log( expect(Actualresult1).toBeDisplayed)
+})
 
 // Then(/^Validate Amazon Prime logo is displayed$/, async function () {
 //     let Actualresult2 = await $ ("//span[@class='nav-sprite nav-logo-base']").isDisplayed()

@@ -10,6 +10,7 @@ Feature: Add a mobile to the cart on Amazon
 # #     # Then I add the mobile to the cart
 # #     # And the cart should contain 1 item
 
+ @Regression @Debug
   Scenario Outline: Enter text mobile in search box
     Given I am on the Amazon homepage
     Then Enter text in <searchBox>

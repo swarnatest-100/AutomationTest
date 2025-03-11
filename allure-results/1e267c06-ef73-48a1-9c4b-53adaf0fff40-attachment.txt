@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[text()='Copy Tex']\"}\n  (Session info: chrome=131.0.6778.205)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF6FE6DFA85+28789]\n\t(No symbol) [0x00007FF6FE648660]\n\t(No symbol) [0x00007FF6FE4E592A]\n\t(No symbol) [0x00007FF6FE53930E]\n\t(No symbol) [0x00007FF6FE5395FC]\n\t(No symbol) [0x00007FF6FE5828A7]\n\t(No symbol) [0x00007FF6FE55F47F]\n\t(No symbol) [0x00007FF6FE57F654]\n\t(No symbol) [0x00007FF6FE55F1E3]\n\t(No symbol) [0x00007FF6FE52A938]\n\t(No symbol) [0x00007FF6FE52BAA1]\n\tGetHandleVerifier [0x00007FF6FEA192BD+3410093]\n\tGetHandleVerifier [0x00007FF6FEA2E75D+3497293]\n\tGetHandleVerifier [0x00007FF6FEA229F3+3448803]\n\tGetHandleVerifier [0x00007FF6FE7A7B3B+848171]\n\t(No symbol) [0x00007FF6FE653BBF]\n\t(No symbol) [0x00007FF6FE64F664]\n\t(No symbol) [0x00007FF6FE64F7FD]\n\t(No symbol) [0x00007FF6FE63ECC9]\n\tBaseThreadInitThunk [0x00007FFE92FC7374+20]\n\tRtlUserThreadStart [0x00007FFE949DCC91+33]\n"
+}
