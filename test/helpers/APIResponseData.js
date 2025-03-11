@@ -6,7 +6,7 @@ let payload = {
 }
 let payload1 = {
     "id": 0,
-    "username": "string",
+    "username": "ABCDE",
     "firstName": "string",
     "lastName": "string",
     "email": "string",
@@ -36,11 +36,11 @@ console.log(typeof request)
 
 // POST()
 
-async function POST()
+async function POST(a)
 {
     let res = await request("https://petstore.swagger.io").post("/v2/user")
     .send(payload1)
     console.log(JSON.stringify(res.body))
 
 }
-POST()
+POST("ABC")
