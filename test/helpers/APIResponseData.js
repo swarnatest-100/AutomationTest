@@ -17,14 +17,14 @@ let payload1 = {
 
 console.log(typeof request)
 
-// async function GET()
-// {
-//     let res = await request("https://reqres.in").get("/api/users/2")
-//     console.log(JSON.stringify(res.body))
+async function GET()
+{
+    let res = await request("https://reqres.in").get("/api/users/2")
+    console.log(JSON.stringify(res.body))
 
-// }
+}
 
-// GET()
+GET()
 
 // async function POST()
 // {
